@@ -14,6 +14,10 @@ author2 = Author("Mary Shelley")
 author_repository.save(author2)
 author3 = Author("Joe Simpson")
 author_repository.save(author3)
+author4 = Author("Ernest Hemingway")
+author_repository.save(author4)
+
+book_repository.select_all()
 
 book1 = Book("Da Vinci Code", author1)
 book_repository.save(book1)
@@ -21,8 +25,12 @@ book2 = Book("Frankenstein", author2)
 book_repository.save(book2)
 book3 = Book("Touching the Void", author3)
 book_repository.save(book3)
+book4 = Book("The Old Man and the Sea", author4)
+book_repository.save(book4)
 
 
-book_repository.select_all()
+
+
+pdb.set_trace
 
 
